@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="360報表">
+        <meta name="description" content="360報表">
+        <meta name="author" content="快一點">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>360報表</title>
+        <link rel="icon" type="image/png" href="img/favicon.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC">
+        <!-- Google Icon -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body">
+            <!-- Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Main -->
+            <section class="main">
+                <a id="buttonTime" class="time itemH">
+                    <span class="fM primary">今日</span>
+                    <div class="icon"><i class="fas fa-caret-down"></i></div>
+                </a>
+                <!-- 總營業額 -->
+                <span class="fXL margin gray">總營業額</span>
+                <span class="fXXL margin bold">$100,000</span>
+                <div class="itemH">
+                    <div class="icon success"><i class="fas fa-arrow-up"></i></div>
+                    <span class="fL bold success">$10,000</span>
+                </div>
+                <div class="spaceL"></div>
+                <!-- 收入來源分佈 -->
+                <div class="itemV width">
+                    <span class="fL margin">收入來源分佈</span>
+                    <div class="itemH width">
+                        <div class="income itemV background width between">
+                            <div class="itemV start">
+                                <div class="icon"><i class="far fa-window-restore fa-2x"></i></div>
+                                <span class="fL margin">第三方平台收入</span>
+                                <span class="detail fS gray">UberEats</span>
+                                <span class="detail fS gray">FoodPanda</span>
+                            </div>
+                            <div class="itemH margin start">
+                                <span class="fXL bold">$25,000</span>
+                                <div class="itemH">
+                                    <div class="icon success"><i class="fas fa-arrow-up fa-sm"></i></div>
+                                    <span class="fM bold success">20%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="income itemV background width between">
+                            <div class="itemV start">
+                                <div class="icon"><i class="far fa-credit-card fa-2x"></i></div>
+                                <span class="fL margin">信用卡收入</span>
+                                <span class="detail fS gray">信用卡</span>
+                                <span class="detail fS gray">Apple Pay</span>
+                                <span class="detail fS gray">Google Pay</span>
+                            </div>
+                            <div class="itemH margin start">
+                                <span class="fXL bold">$30,000</span>
+                                <div class="itemH">
+                                    <div class="icon error"><i class="fas fa-arrow-down fa-sm"></i></div>
+                                    <span class="fM bold error">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="income itemV background width between">
+                            <div class="itemV start">
+                                <div class="icon"><i class="far fa-mobile fa-2x"></i></div>
+                                <span class="fL margin">第三方支付</span>
+                                <div class="price itemH between">
+                                    <span class="detail fS gray">Line Pay</span>
+                                    <span class="detail fS gray">$10,000</span>
+                                </div>
+                                <div class="price itemH between">
+                                    <span class="detail fS gray">街口支付</span>
+                                    <span class="detail fS gray">$9,000</span>
+                                </div>
+                                <div class="price itemH between">
+                                    <span class="detail fS gray">悠遊付</span>
+                                    <span class="detail fS gray">$4,500</span>
+                                </div>
+                                <div class="price itemH between">
+                                    <span class="detail fS gray">台灣Pay</span>
+                                    <span class="detail fS gray">$1,500</span>
+                                </div>
+                            </div>
+                            <div class="itemH margin start">
+                                <span class="fXL bold">$30,000</span>
+                                <div class="itemH">
+                                    <div class="icon error"><i class="fas fa-arrow-down fa-sm"></i></div>
+                                    <span class="fM bold error">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="income itemV background width between">
+                            <div class="itemV start">
+                                <div class="icon"><i class="far fa-cash-register fa-2x"></i></div>
+                                <span class="fL margin">現場收入</span>
+                                <span class="detail fS gray">現金</span>
+                                <span class="detail fS gray">POS</span>
+                            </div>
+                            <div class="itemH margin start">
+                                <span class="fXL bold">$20,000</span>
+                                <div class="itemH">
+                                    <div class="icon success"><i class="fas fa-arrow-up fa-sm"></i></div>
+                                    <span class="fM bold success">20%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spaceL"></div>
+                <!-- 訂單平台分佈 -->
+                <div class="itemV width">
+                    <span class="fL margin">訂單平台分佈</span>
+                    <div class="platform itemH width padding background">
+                        <table class="fM">
+                            <tr>
+                                <th><span class="gray">訂單平台</span></th>
+                                <th><span class="gray">訂單數</span></th>
+                                <th><span class="gray">營業額</span></th>
+                                <th><span></span></th>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <div class="itemH">
+                                        <div class="img"><img src="img/UberEats.png"></div>
+                                        <span>UberEats</span>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <span>10</span>
+                                </td>
+                                <td align="center">
+                                    <span class="bold">$20,000</span>
+                                </td>
+                                <td>
+                                    <div class="dot tc1"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <div class="itemH">
+                                        <div class="img"><img src="img/FoodPanda.png"></div>
+                                        <span>FoodPanda</span>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <span>5</span>
+                                </td>
+                                <td align="center">
+                                    <span class="bold">$15,000</span>
+                                </td>
+                                <td>
+                                    <div class="dot tc3"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <div class="itemH">
+                                        <div class="img"><img src="img/favicon.png"></div>
+                                        <span>線上點餐</span>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <span>10</span>
+                                </td>
+                                <td align="center">
+                                    <span class="bold">$50,000</span>
+                                </td>
+                                <td>
+                                    <div class="dot tc4"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <div class="itemH">
+                                        <div class="img"><span class="fS">其他</span></div>
+                                        <span>其他平台</span>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <span>20</span>
+                                </td>
+                                <td align="center">
+                                    <span class="bold">$5,000</span>
+                                </td>
+                                <td>
+                                    <div class="dot tc7"></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="pieChart itemV width">
+                            <canvas id="pieChart"></canvas>
+                            <div class="itemV center middle">
+                                <span class="fL">總營業額</span>
+                                <span class="fL bold">$100,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Popup (Time) -->
+            <section id="popTime" class="popTime popup notice">
+                <div class="popBody">
+                    <a class="close"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <span class="fXL">時間區間</span>
+                    </section>
+                    <section class="popMain">
+                        <div class="tabs fM">
+                            <a class="tab active">
+                                <span>今日</span>
+                            </a>
+                            <a class="tab">
+                                <span>昨日</span>
+                            </a>
+                            <a class="tab">
+                                <span>本週</span>
+                            </a>
+                            <a class="tab">
+                                <span>上週</span>
+                            </a>
+                            <a class="tab">
+                                <span>本月</span>
+                            </a>
+                            <a class="tab">
+                                <span>今年</span>
+                            </a>
+                        </div>
+                        <div class="spaceS"></div>
+                        <div class="dateRange">
+                            <span class="fM">從</span>
+                            <input type="date" class="fM" name="startDate">
+                            <input type="time" class="fM" name="startTime" value="00:00">
+                        </div>
+                        <div class="dateRange">
+                            <span class="fM">到</span>
+                            <input type="date" class="fM" name="endDate">
+                            <input type="time" class="fM" name="endTime" value="23:59">
+                        </div>
+                        <div class="spaceS"></div>
+                        <div class="itemH width between margin">
+                            <span class="fM">時間根據：</span>
+                            <div class="itemH">
+                                <span class="fM">下單時間</span>
+                                <label class="switch">
+                                    <input type="checkbox"> <!-- checked -->
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="fM disabled">取餐時間</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button cancel secondary"><span class="fM">取消</span></a>
+                        <a class="button submit"><span class="fM">確認</span></a>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Script -->
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
