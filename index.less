@@ -34,13 +34,13 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
 
     // Unique
     .time { top: 20px; right: 20px; padding: 5px 5px 5px 10px; position: absolute; background-color: @c2; }
-    .income { height: 180px; padding: 20px; margin: 10px; border-radius: 20px !important; flex: 1;
+    .income { height: 170px; padding: 20px; margin: 10px; border-radius: 20px !important; flex: 1;
         .detail { margin: 2.5px 5px; }
         .icon.success, .icon.error { margin-right: 5px; }
         .icon.minor { position: relative;
-            // &:hover .itemV, &:active .itemV { visibility: visible; }
-            .itemV { width: fit-content; top: -40px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
-        @media(hover: hover) and (pointer: fine) { .icon.minor:hover { visibility: visible; }}
+            &:hover .itemV, &:active .itemV { visibility: visible; }
+            .itemV { width: max-content; bottom: 20px; right: -20px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
+        // @media(hover: hover) and (pointer: fine) { .icon.minor:hover { visibility: visible; }}
         .img { width: 30px; min-width: 30px; height: 30px; margin-left: 20px; }}
     .income:nth-child(4) { flex: 2; }
     .platform { width: calc(100% - 30px) !important; height: 300px; margin: 10px; border-radius: 10px !important;
@@ -58,7 +58,8 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
             .pieChart { margin-bottom: 15px; }}}
 
     // Mobile
-    @media @sM { .platform .pieChart .itemV { margin-top: -25px; }}
+    @media @sM { .platform .pieChart .itemV { margin-top: -25px; }
+        .income .icon.minor .itemV { max-width: 150px; }}
 
     // Color
     .primary    { color: @c1 !important; }
@@ -101,7 +102,7 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
     *, :after, :before  { box-sizing: unset; -webkit-box-sizing: unset; }
 
     // Container
-    .main   { padding: 20px; border-radius: 10px; position: relative; display: flex; flex-direction: column; overflow-y: auto; background-color: white; }
+    .main   { padding: 20px; border-radius: 10px; position: relative; display: flex; flex-direction: column; overflow-y: auto; background-color: white; overflow-x: hidden; }
     @media @sD, @sT { .main { width: calc(100% - 100px); margin: 40px; }}
     .itemH  { width: fit-content; border-radius: 5px; display: flex; align-items: center; }
     .itemV  { width: fit-content; border-radius: 5px; display: flex; flex-direction: column; }

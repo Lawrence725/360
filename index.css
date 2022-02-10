@@ -52,7 +52,7 @@ button {
   background-color: #FEE0D6;
 }
 .body .income {
-  height: 180px;
+  height: 170px;
   padding: 20px;
   margin: 10px;
   border-radius: 20px !important;
@@ -68,18 +68,18 @@ button {
 .body .income .icon.minor {
   position: relative;
 }
+.body .income .icon.minor:hover .itemV,
+.body .income .icon.minor:active .itemV {
+  visibility: visible;
+}
 .body .income .icon.minor .itemV {
-  width: fit-content;
-  top: -40px;
+  width: max-content;
+  bottom: 20px;
+  right: -20px;
   position: absolute;
   visibility: hidden;
   border-radius: 5px;
   background-color: #FEE0D6;
-}
-@media (hover: hover) and (pointer: fine) {
-  .body .income .icon.minor:hover {
-    visibility: visible;
-  }
 }
 .body .income .img {
   width: 30px;
@@ -136,6 +136,9 @@ button {
 @media (max-width: 767px) {
   .body .platform .pieChart .itemV {
     margin-top: -25px;
+  }
+  .body .income .icon.minor .itemV {
+    max-width: 150px;
   }
 }
 .body .primary {
@@ -270,6 +273,7 @@ button {
   flex-direction: column;
   overflow-y: auto;
   background-color: white;
+  overflow-x: hidden;
 }
 @media (min-width: 1024px), (max-width: 1023px) and (min-width: 768px) {
   .body .main {
