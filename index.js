@@ -1,18 +1,10 @@
-// Page loads
-// function startup() {
-//     var el = document.getElementById("infoButton");
-//     el.addEventListener("touchstart", handleStart, false);
-//     el.addEventListener("touchend", handleEnd, false);
-//     el.addEventListener("touchcancel", handleCancel, false);
-//     el.addEventListener("touchmove", handleMove, false);
-// }
-
 // 
 function handleStart(evt) {
     evt.preventDefault();
-    console.log("touchstart.");
-    var el = document.getElementById("infoCard");
-    el.style['visibility'] = 'visible';
+    evt.target.children[2].style['visibility'] = 'visible';
+    // console.log("touchstart.");
+    // var el = document.getElementById("infoCard");
+    // el.style['visibility'] = 'visible';
 }
 
 // Chart
