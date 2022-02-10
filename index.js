@@ -12,7 +12,7 @@ function handleStart(evt) {
     evt.preventDefault();
     console.log("touchstart.");
     var el = document.getElementById("infoCard");
-    el.style.visibility = 'visible';
+    el.style['visibility'] = 'visible';
 }
 
 // Chart
