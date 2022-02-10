@@ -9,9 +9,9 @@ function closeInfo() {
         info.item(i).style['visibility'] = 'hidden';
     }
 }
-document.addEventListener('scroll', function(e) {
-    closeInfo();
-});
+// document.addEventListener('scroll', function(e) {
+//     closeInfo();
+// });
 
 // Chart
 const ctx = document.getElementById('pieChart').getContext('2d');
