@@ -1,11 +1,11 @@
 // Page loads
-function startup() {
-    var el = document.getElementById("infoButton");
-    el.addEventListener("touchstart", handleStart, false);
-    el.addEventListener("touchend", handleEnd, false);
-    el.addEventListener("touchcancel", handleCancel, false);
-    el.addEventListener("touchmove", handleMove, false);
-}
+// function startup() {
+//     var el = document.getElementById("infoButton");
+//     el.addEventListener("touchstart", handleStart, false);
+//     el.addEventListener("touchend", handleEnd, false);
+//     el.addEventListener("touchcancel", handleCancel, false);
+//     el.addEventListener("touchmove", handleMove, false);
+// }
 
 // 
 function handleStart(evt) {
