@@ -68,14 +68,14 @@ button {
 .body .income .icon.minor {
   position: relative;
 }
-.body .income .icon.minor:hover .itemV,
-.body .income .icon.minor:active .itemV {
+.body .income .icon.minor:hover .info,
+.body .income .icon.minor:active .info {
   visibility: visible;
 }
-.body .income .icon.minor .itemV {
+.body .income .icon.minor .info {
   width: max-content;
   bottom: 20px;
-  right: -20px;
+  right: -25px;
   position: absolute;
   visibility: hidden;
   border-radius: 5px;
@@ -138,7 +138,7 @@ button {
     margin-top: -25px;
   }
   .body .income .icon.minor .itemV {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 .body .primary {

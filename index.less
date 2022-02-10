@@ -38,9 +38,8 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
         .detail { margin: 2.5px 5px; }
         .icon.success, .icon.error { margin-right: 5px; }
         .icon.minor { position: relative;
-            &:hover .itemV, &:active .itemV { visibility: visible; }
-            .itemV { width: max-content; bottom: 20px; right: -20px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
-        // @media(hover: hover) and (pointer: fine) { .icon.minor:hover { visibility: visible; }}
+            &:hover .info, &:active .info { visibility: visible; }
+            .info { width: max-content; bottom: 20px; right: -25px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
         .img { width: 30px; min-width: 30px; height: 30px; margin-left: 20px; }}
     .income:nth-child(4) { flex: 2; }
     .platform { width: calc(100% - 30px) !important; height: 300px; margin: 10px; border-radius: 10px !important;
@@ -52,14 +51,13 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
     // Mobile + Tablet
     @media @sM, @sT { 
         .main > * > .itemH { flex-wrap: wrap; }
-        // .income { width: calc(100% - 60px) !important; height: fit-content; }
         .platform { height: fit-content;
             table { width: calc(100% - 20px) !important; }
             .pieChart { margin-bottom: 15px; }}}
 
     // Mobile
     @media @sM { .platform .pieChart .itemV { margin-top: -25px; }
-        .income .icon.minor .itemV { max-width: 150px; }}
+        .income .icon.minor .itemV { max-width: 200px; }}
 
     // Color
     .primary    { color: @c1 !important; }
