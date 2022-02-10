@@ -1,10 +1,11 @@
-// 
-function handleStart(evt) {
+// Info Touch
+function touchInfo(evt) {
     evt.preventDefault();
     evt.target.children[2].style['visibility'] = 'visible';
-    // console.log("touchstart.");
-    // var el = document.getElementById("infoCard");
-    // el.style['visibility'] = 'visible';
+}
+function touchClose(evt) {
+    evt.preventDefault();
+    evt.target.style['visibility'] = 'hidden';
 }
 
 // Chart
