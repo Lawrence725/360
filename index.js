@@ -10,15 +10,7 @@ function closeInfo() {
     }
 }
 document.addEventListener('scroll', function(e) {
-    lastKnownScrollPosition = window.scrollY;
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        closeInfo();
-        ticking = false;
-      });
-  
-      ticking = true;
-    }
+    closeInfo();
 });
 
 // Chart
