@@ -137,8 +137,16 @@ button {
   .body .platform .pieChart .itemV {
     margin-top: -25px;
   }
-  .body .income .icon.minor .itemV {
-    max-width: 200px;
+  .body .income .icon.minor .info {
+    max-width: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .body .income > * > * > * > .detail {
+    display: none;
+  }
+  .body .income .icon.minor .info {
+    max-width: 150px;
   }
 }
 .body .primary {

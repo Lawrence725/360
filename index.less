@@ -2,7 +2,7 @@
 @sD:    (min-width: 1024px);                            // Desktop
 @sT:    (max-width: 1023px) and (min-width: 768px);     // Tablet
 @sM:    (max-width: 767px);                             // Mobile
-@sMs:   (max-width: 374px);                             // Mobile (Small)
+@sMs:   (max-width: 375px);                             // Mobile (Small)
 @sLand: (max-height: 767px) and (min-width: 568px);     // Mobile (Landscape)
 
 // CSS Color
@@ -57,7 +57,11 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
 
     // Mobile
     @media @sM { .platform .pieChart .itemV { margin-top: -25px; }
-        .income .icon.minor .itemV { max-width: 200px; }}
+        .income .icon.minor .info { max-width: 180px; }}
+
+    // Small Mobile
+    @media @sMs { .income > * > * > * > .detail { display: none; }
+        .income .icon.minor .info { max-width: 150px; }}
 
     // Color
     .primary    { color: @c1 !important; }
