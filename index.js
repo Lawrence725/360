@@ -3,10 +3,23 @@ function touchInfo(evt) {
     evt.preventDefault();
     evt.target.children[2].style['visibility'] = 'visible';
 }
-function touchClose(evt) {
-    evt.preventDefault();
-    evt.target.style['visibility'] = 'hidden';
+function closeInfo() {
+    var info = document.getElementsByClassName("info");
+    for (var i = 0; i < info.length; i++) {
+        info.item(i).style['visibility'] = 'hidden';
+    }
 }
+document.addEventListener('scroll', function(e) {
+    lastKnownScrollPosition = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        closeInfo();
+        ticking = false;
+      });
+  
+      ticking = true;
+    }
+});
 
 // Chart
 const ctx = document.getElementById('pieChart').getContext('2d');
