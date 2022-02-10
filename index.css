@@ -68,10 +68,6 @@ button {
 .body .income .icon.minor {
   position: relative;
 }
-.body .income .icon.minor:hover .itemV,
-.body .income .icon.minor:active .itemV {
-  visibility: visible;
-}
 .body .income .icon.minor .itemV {
   width: fit-content;
   top: -40px;
@@ -79,6 +75,11 @@ button {
   visibility: hidden;
   border-radius: 5px;
   background-color: #FEE0D6;
+}
+@media (hover: hover) and (pointer: fine) {
+  .body .income .icon.minor:hover {
+    visibility: visible;
+  }
 }
 .body .income .img {
   width: 30px;
@@ -120,11 +121,7 @@ button {
 }
 @media (max-width: 767px), (max-width: 1023px) and (min-width: 768px) {
   .body .main > * > .itemH {
-    flex-direction: column;
-  }
-  .body .income {
-    width: calc(100% - 60px) !important;
-    height: fit-content;
+    flex-wrap: wrap;
   }
   .body .platform {
     height: fit-content;
