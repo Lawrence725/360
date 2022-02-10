@@ -68,7 +68,8 @@ button {
 .body .income .icon.minor {
   position: relative;
 }
-.body .income .icon.minor:hover .itemV {
+.body .income .icon.minor:hover .itemV,
+.body .income .icon.minor:active .itemV {
   visibility: visible;
 }
 .body .income .icon.minor .itemV {
