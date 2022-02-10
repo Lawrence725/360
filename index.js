@@ -1,13 +1,14 @@
 // Info Touch
-function closeInfo() {
-    var info = document.getElementsByClassName("info");
-    for (var i = 0; i < info.length; i++) {
-        info.item(i).style['visibility'] = 'hidden';
-    }
-}
 function touchInfo(evt) {
     evt.preventDefault();
     evt.target.children[2].style['visibility'] = 'visible';
+}
+function closeInfo() {
+    var info = document.getElementsByClassName("info");
+    for (var i = 0; i < info.length; i++) {
+        if ( item(i).style['visibility'] === 'visible' )
+            info.item(i).style['visibility'] = 'hidden';
+    }
 }
 // document.addEventListener('scroll', function(e) {
 //     closeInfo();
