@@ -74,7 +74,7 @@ button {
 }
 .body .income .icon.minor .info {
   width: max-content;
-  bottom: 20px;
+  bottom: 30px;
   right: -25px;
   position: absolute;
   visibility: hidden;
