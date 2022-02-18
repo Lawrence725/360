@@ -19,10 +19,10 @@ const ctx = document.getElementById('pieChart').getContext('2d');
 const pieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: [ 'UberEats', 'FoodPanda', '線上點餐', '其他平台' ],
+        labels: [ 'UberEats', 'FoodPanda', '線上點餐', '愛點餐飲', '其他平台' ],
         datasets: [{
-            data: [20000, 15000, 50000, 5000],
-            backgroundColor: [ '#ED5565', '#FFCE54', '#A0D468', '#5D9CEC' ],
+            data: [20000, 15000, 50000, 10000, 5000],
+            backgroundColor: [ '#ED5565', '#FFCE54', '#A0D468', '#5D9CEC', '#AC92EC' ],
             borderColor: '#F2F1F6'
         }]
     }
