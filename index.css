@@ -42,7 +42,7 @@ button {
 .body {
   display: flex;
   flex-direction: column;
-  background-color: #F2F1F6;
+  background-color: #ebecf1;
 }
 .body .time {
   top: 20px;
@@ -74,6 +74,7 @@ button {
 }
 .body .income .icon.minor .info {
   width: max-content;
+  max-width: 150px;
   bottom: 30px;
   right: -25px;
   position: absolute;

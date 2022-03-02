@@ -30,7 +30,7 @@
 
 body    { margin: 0; }
 body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 'Montserrat', 'Noto Sans TC', 'Arial', '微軟正黑體', '新細明體', 'sans-serif'; }
-.body   { display: flex; flex-direction: column; background-color: @cBg;
+.body   { display: flex; flex-direction: column; background-color: #ebecf1;
 
     // Unique
     .time { top: 20px; right: 20px; padding: 5px 5px 5px 10px; position: absolute; background-color: @c2; }
@@ -39,7 +39,7 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button { font-family: 
         .icon.success, .icon.error { margin-right: 5px; }
         .icon.minor { position: relative;
             &:hover .info, &:active .info { visibility: visible; }
-            .info { width: max-content; bottom: 30px; right: -25px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
+            .info { width: max-content; max-width: 150px; bottom: 30px; right: -25px; position: absolute; visibility: hidden; border-radius: 5px; background-color: @c2; }}
         .img { width: 30px; min-width: 30px; height: 30px; margin-left: 20px; }}
     .income:nth-child(4) { flex: 2; }
     .platform { width: calc(100% - 30px) !important; height: 350px; margin: 10px; border-radius: 10px !important;
